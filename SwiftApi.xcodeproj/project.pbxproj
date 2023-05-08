@@ -18,6 +18,8 @@
 		D7A2616A2A03BD2E0090D641 /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261692A03BD2E0090D641 /* AppTabBar.swift */; };
 		D7A2616D2A04A5FA0090D641 /* MainTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2616C2A04A5FA0090D641 /* MainTabScreen.swift */; };
 		D7A2616F2A04E5BA0090D641 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2616E2A04E5BA0090D641 /* UIView.swift */; };
+		D7A261722A04FA530090D641 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261712A04FA530090D641 /* SideMenu.swift */; };
+		D7A261742A04FB970090D641 /* SideMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261732A04FB970090D641 /* SideMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D7A261692A03BD2E0090D641 /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
 		D7A2616C2A04A5FA0090D641 /* MainTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabScreen.swift; sourceTree = "<group>"; };
 		D7A2616E2A04E5BA0090D641 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D7A261712A04FA530090D641 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		D7A261732A04FB970090D641 /* SideMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		D7A2615F2A03A2410090D641 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D7A261702A04FA380090D641 /* SideMenu */,
 				D7A261682A03BD030090D641 /* TabBar */,
 				D7A261602A03A2510090D641 /* CircleButton */,
 			);
@@ -158,6 +163,15 @@
 				D7A2616C2A04A5FA0090D641 /* MainTabScreen.swift */,
 			);
 			path = MainTab;
+			sourceTree = "<group>";
+		};
+		D7A261702A04FA380090D641 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D7A261712A04FA530090D641 /* SideMenu.swift */,
+				D7A261732A04FB970090D641 /* SideMenuButton.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +250,9 @@
 				D7A261652A03A68C0090D641 /* Color.swift in Sources */,
 				D7A261582A0367F90090D641 /* APICaller.swift in Sources */,
 				D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */,
+				D7A261742A04FB970090D641 /* SideMenuButton.swift in Sources */,
 				D7A261672A03B1980090D641 /* CircleButtonAnimation.swift in Sources */,
+				D7A261722A04FA530090D641 /* SideMenu.swift in Sources */,
 				D7A2616F2A04E5BA0090D641 /* UIView.swift in Sources */,
 				D7A261622A03A2740090D641 /* CircleButton.swift in Sources */,
 			);

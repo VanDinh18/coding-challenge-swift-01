@@ -20,6 +20,9 @@
 		D7A2616F2A04E5BA0090D641 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2616E2A04E5BA0090D641 /* UIView.swift */; };
 		D7A261722A04FA530090D641 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261712A04FA530090D641 /* SideMenu.swift */; };
 		D7A261742A04FB970090D641 /* SideMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261732A04FB970090D641 /* SideMenuButton.swift */; };
+		D7DF61322A08EA6E000BBC1A /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61312A08EA6E000BBC1A /* CourseModel.swift */; };
+		D7DF61342A08EB05000BBC1A /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61332A08EB05000BBC1A /* CourseService.swift */; };
+		D7DF61372A09016A000BBC1A /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61362A09016A000BBC1A /* CourseRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		D7A2616E2A04E5BA0090D641 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D7A261712A04FA530090D641 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		D7A261732A04FB970090D641 /* SideMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuButton.swift; sourceTree = "<group>"; };
+		D7DF61312A08EA6E000BBC1A /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		D7DF61332A08EB05000BBC1A /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
+		D7DF61362A09016A000BBC1A /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		D7A261592A03923A0090D641 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF61312A08EA6E000BBC1A /* CourseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 		D7A2615A2A0392470090D641 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF61332A08EB05000BBC1A /* CourseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -124,6 +132,7 @@
 		D7A2615F2A03A2410090D641 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF61352A090133000BBC1A /* Rows */,
 				D7A261702A04FA380090D641 /* SideMenu */,
 				D7A261682A03BD030090D641 /* TabBar */,
 				D7A261602A03A2510090D641 /* CircleButton */,
@@ -172,6 +181,14 @@
 				D7A261732A04FB970090D641 /* SideMenuButton.swift */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		D7DF61352A090133000BBC1A /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF61362A09016A000BBC1A /* CourseRow.swift */,
+			);
+			path = Rows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,14 +264,17 @@
 				D7A2616A2A03BD2E0090D641 /* AppTabBar.swift in Sources */,
 				D7A2615E2A0392A70090D641 /* HomeScreen.swift in Sources */,
 				D7A2616D2A04A5FA0090D641 /* MainTabScreen.swift in Sources */,
+				D7DF61372A09016A000BBC1A /* CourseRow.swift in Sources */,
 				D7A261652A03A68C0090D641 /* Color.swift in Sources */,
 				D7A261582A0367F90090D641 /* APICaller.swift in Sources */,
 				D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */,
+				D7DF61322A08EA6E000BBC1A /* CourseModel.swift in Sources */,
 				D7A261742A04FB970090D641 /* SideMenuButton.swift in Sources */,
 				D7A261672A03B1980090D641 /* CircleButtonAnimation.swift in Sources */,
 				D7A261722A04FA530090D641 /* SideMenu.swift in Sources */,
 				D7A2616F2A04E5BA0090D641 /* UIView.swift in Sources */,
 				D7A261622A03A2740090D641 /* CircleButton.swift in Sources */,
+				D7DF61342A08EB05000BBC1A /* CourseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

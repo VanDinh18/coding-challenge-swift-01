@@ -9,13 +9,22 @@ import Foundation
 import UIKit
 import SwiftUI
 
+let phoneData = [
+    CourseModel(name: "iPhone 11 Pro Max", image: "https://picsum.photos/200/300?grayscale"),
+    CourseModel(name: "iPhone 11 Pro", image: "https://picsum.photos/200/300?grayscale"),
+    CourseModel(name: "iPhone 11", image: "https://picsum.photos/200/300?grayscale"),
+    CourseModel(name: "iPhone XR", image: "https://picsum.photos/200/300?grayscale"),
+    CourseModel(name: "iPhone 8", image: "https://picsum.photos/200/300?grayscale")
+]
+
 struct HomeScreen: View {
     @State private var isShow: Bool = false
     @Binding var isShowMenu: Bool
+    @StateObject private var courseService = CourseService()
     
     var body: some View {
-        VStack{
-            HStack{
+        VStack {
+            HStack {
                 CircleButton(iconName: isShow ? "plus" : "info")
                     .background(
                         CircleButtonAnimation(animate: $isShow)
@@ -43,13 +52,21 @@ struct HomeScreen: View {
                     )
             }
             .padding(.horizontal, 24)
-            VStack() {
-              
-            }
+            
+//            VStack() {
+                List {
+                    ForEach(phoneData, id: \.self) {course in
+                        CourseRow(course: course)
+                    }
+                }
+                
+//            }
             
             Spacer()
         }
-        
+        .onAppear {
+            courseService.fetch()
+        }
     }
 }
 

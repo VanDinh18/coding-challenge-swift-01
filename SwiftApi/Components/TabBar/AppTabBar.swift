@@ -19,7 +19,7 @@ struct AppTabBar: View {
     ]
     
     var body: some View {
-        ZStack {
+        VStack {
             HStack() {
                 ForEach(tabBarItems, id: \.tabKey ) { tab in
                     Button {
@@ -40,7 +40,7 @@ struct AppTabBar: View {
                     
                 }
             }
-            .frame(width: .infinity, height: 54)
+            .frame(width: nil, height: 54)
             .background(.thinMaterial)
             .cornerRadius(16)
             .padding(.horizontal)

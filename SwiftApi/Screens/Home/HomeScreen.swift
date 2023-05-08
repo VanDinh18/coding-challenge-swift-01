@@ -11,6 +11,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     @State private var isShow: Bool = false
+    @Binding var isShowMenu: Bool
     
     var body: some View {
         VStack{
@@ -19,6 +20,11 @@ struct HomeScreen: View {
                     .background(
                         CircleButtonAnimation(animate: $isShow)
                     )
+                    .onTapGesture(count: 1) {
+                        withAnimation(.spring()){
+//                            isShowMenu.toggle()
+                        }
+                    }
                 Spacer()
                 Text(isShow ? "Auto Prices" : "Live Prices")
                     .font(.headline)
@@ -37,6 +43,10 @@ struct HomeScreen: View {
                     )
             }
             .padding(.horizontal, 24)
+            VStack() {
+              
+            }
+            
             Spacer()
         }
         
@@ -45,6 +55,6 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(isShowMenu: .constant(true))
     }
 }

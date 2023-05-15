@@ -33,7 +33,7 @@ struct CourseRow: View {
 struct CourseRow_Previews: PreviewProvider {
     static var previews: some View {
         CourseRow(
-            course: CourseModel(name: "title", image: "https://picsum.photos/200/300?grayscale")
+            course: CourseModel(name: "title", image: "https://picsum.photos/id/60/100/300")
         )
     }
 }

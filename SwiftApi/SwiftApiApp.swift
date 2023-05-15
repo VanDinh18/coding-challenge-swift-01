@@ -12,6 +12,7 @@ struct SwiftApiApp: App {
     var body: some Scene {
         WindowGroup {
             MainTabScreen()
+//            ContentView()
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7696EC02A121AF9000B1D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696EBF2A121AF9000B1D26 /* ContentView.swift */; };
 		D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261492A0366440090D641 /* SwiftApiApp.swift */; };
 		D7A2614E2A0366470090D641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A2614D2A0366470090D641 /* Assets.xcassets */; };
 		D7A261512A0366470090D641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A261502A0366470090D641 /* Preview Assets.xcassets */; };
@@ -23,9 +24,11 @@
 		D7DF61322A08EA6E000BBC1A /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61312A08EA6E000BBC1A /* CourseModel.swift */; };
 		D7DF61342A08EB05000BBC1A /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61332A08EB05000BBC1A /* CourseService.swift */; };
 		D7DF61372A09016A000BBC1A /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61362A09016A000BBC1A /* CourseRow.swift */; };
+		D7DF613A2A0E37A0000BBC1A /* PhoneDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF61392A0E37A0000BBC1A /* PhoneDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7696EBF2A121AF9000B1D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7A261462A0366440090D641 /* SwiftApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A261492A0366440090D641 /* SwiftApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftApiApp.swift; sourceTree = "<group>"; };
 		D7A2614D2A0366470090D641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		D7DF61312A08EA6E000BBC1A /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		D7DF61332A08EB05000BBC1A /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
 		D7DF61362A09016A000BBC1A /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		D7DF61392A0E37A0000BBC1A /* PhoneDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				D7A2615A2A0392470090D641 /* Services */,
 				D7A261592A03923A0090D641 /* Models */,
 				D7A261492A0366440090D641 /* SwiftApiApp.swift */,
+				D7696EBF2A121AF9000B1D26 /* ContentView.swift */,
 				D7A261572A0367F90090D641 /* APICaller.swift */,
 				D7A2614D2A0366470090D641 /* Assets.xcassets */,
 				D7A2614F2A0366470090D641 /* Preview Content */,
@@ -115,6 +120,7 @@
 		D7A2615B2A0392580090D641 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF61382A0E3784000BBC1A /* PhoneDetail */,
 				D7A2616B2A04A5DE0090D641 /* MainTab */,
 				D7A2615C2A03926A0090D641 /* Home */,
 			);
@@ -191,6 +197,14 @@
 			path = Rows;
 			sourceTree = "<group>";
 		};
+		D7DF61382A0E3784000BBC1A /* PhoneDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF61392A0E37A0000BBC1A /* PhoneDetailScreen.swift */,
+			);
+			path = PhoneDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,8 +277,10 @@
 			files = (
 				D7A2616A2A03BD2E0090D641 /* AppTabBar.swift in Sources */,
 				D7A2615E2A0392A70090D641 /* HomeScreen.swift in Sources */,
+				D7696EC02A121AF9000B1D26 /* ContentView.swift in Sources */,
 				D7A2616D2A04A5FA0090D641 /* MainTabScreen.swift in Sources */,
 				D7DF61372A09016A000BBC1A /* CourseRow.swift in Sources */,
+				D7DF613A2A0E37A0000BBC1A /* PhoneDetailScreen.swift in Sources */,
 				D7A261652A03A68C0090D641 /* Color.swift in Sources */,
 				D7A261582A0367F90090D641 /* APICaller.swift in Sources */,
 				D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */,

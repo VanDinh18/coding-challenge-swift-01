@@ -10,17 +10,18 @@ import UIKit
 import SwiftUI
 
 let phoneData = [
-    CourseModel(name: "iPhone 11 Pro Max", image: "https://picsum.photos/200/300?grayscale"),
-    CourseModel(name: "iPhone 11 Pro", image: "https://picsum.photos/200/300?grayscale"),
-    CourseModel(name: "iPhone 11", image: "https://picsum.photos/200/300?grayscale"),
-    CourseModel(name: "iPhone XR", image: "https://picsum.photos/200/300?grayscale"),
-    CourseModel(name: "iPhone 8", image: "https://picsum.photos/200/300?grayscale")
+    CourseModel(name: "iPhone 11 Pro Max", image: "https://picsum.photos/id/10/100/300"),
+    CourseModel(name: "iPhone 11 Pro", image: "https://picsum.photos/id/15/100/300"),
+    CourseModel(name: "iPhone 11", image: "https://picsum.photos/id/11/100/300"),
+    CourseModel(name: "iPhone XR", image: "https://picsum.photos/id/13/100/300"),
+    CourseModel(name: "iPhone 8", image: "https://picsum.photos/id/12/100/300")
 ]
 
 struct HomeScreen: View {
     @State private var isShow: Bool = false
     @Binding var isShowMenu: Bool
     @StateObject private var courseService = CourseService()
+    
     
     var body: some View {
         VStack {
@@ -31,7 +32,7 @@ struct HomeScreen: View {
                     )
                     .onTapGesture(count: 1) {
                         withAnimation(.spring()){
-//                            isShowMenu.toggle()
+                            isShowMenu.toggle()
                         }
                     }
                 Spacer()
@@ -53,15 +54,15 @@ struct HomeScreen: View {
             }
             .padding(.horizontal, 24)
             
-//            VStack() {
-                List {
-                    ForEach(phoneData, id: \.self) {course in
+            List {
+                ForEach(phoneData, id: \.self) {course in
+                    NavigationLink(destination: PhoneDetailScreen(course: course)) {
                         CourseRow(course: course)
                     }
+                    
                 }
-                
-//            }
-            
+            }
+            .listStyle(DefaultListStyle())
             Spacer()
         }
         .onAppear {

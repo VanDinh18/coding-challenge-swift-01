@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D7696EC02A121AF9000B1D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696EBF2A121AF9000B1D26 /* ContentView.swift */; };
+		D7696EC32A131DFA000B1D26 /* UserInfoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7696EC12A131DFA000B1D26 /* UserInfoModel.xcdatamodeld */; };
+		D7696EC52A132257000B1D26 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696EC42A132257000B1D26 /* UserInfoController.swift */; };
+		D7696EC82A133048000B1D26 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696EC72A133048000B1D26 /* TimeFormatting.swift */; };
+		D7696ECB2A1339EB000B1D26 /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ECA2A1339EB000B1D26 /* CartScreen.swift */; };
+		D7696ECD2A133A35000B1D26 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ECC2A133A35000B1D26 /* EditFoodView.swift */; };
+		D7696ECF2A133B51000B1D26 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ECE2A133B51000B1D26 /* AddFoodView.swift */; };
+		D7696ED22A135D28000B1D26 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ED12A135D28000B1D26 /* LoginScreen.swift */; };
+		D7696ED42A135FA7000B1D26 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ED32A135FA7000B1D26 /* AuthModel.swift */; };
 		D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261492A0366440090D641 /* SwiftApiApp.swift */; };
 		D7A2614E2A0366470090D641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A2614D2A0366470090D641 /* Assets.xcassets */; };
 		D7A261512A0366470090D641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A261502A0366470090D641 /* Preview Assets.xcassets */; };
@@ -29,6 +37,14 @@
 
 /* Begin PBXFileReference section */
 		D7696EBF2A121AF9000B1D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7696EC22A131DFA000B1D26 /* DataCourseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataCourseModel.xcdatamodel; sourceTree = "<group>"; };
+		D7696EC42A132257000B1D26 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
+		D7696EC72A133048000B1D26 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		D7696ECA2A1339EB000B1D26 /* CartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
+		D7696ECC2A133A35000B1D26 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
+		D7696ECE2A133B51000B1D26 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		D7696ED12A135D28000B1D26 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		D7696ED32A135FA7000B1D26 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		D7A261462A0366440090D641 /* SwiftApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A261492A0366440090D641 /* SwiftApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftApiApp.swift; sourceTree = "<group>"; };
 		D7A2614D2A0366470090D641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +76,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7696EC62A13301D000B1D26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D7696EC72A133048000B1D26 /* TimeFormatting.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D7696EC92A1339D7000B1D26 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				D7696ECA2A1339EB000B1D26 /* CartScreen.swift */,
+				D7696ECC2A133A35000B1D26 /* EditFoodView.swift */,
+				D7696ECE2A133B51000B1D26 /* AddFoodView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		D7696ED02A135D14000B1D26 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D7696ED12A135D28000B1D26 /* LoginScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		D7A2613D2A0366440090D641 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +121,7 @@
 		D7A261482A0366440090D641 /* SwiftApi */ = {
 			isa = PBXGroup;
 			children = (
+				D7696EC62A13301D000B1D26 /* Helpers */,
 				D7A261632A03A6770090D641 /* Extentions */,
 				D7A2615F2A03A2410090D641 /* Components */,
 				D7A2615B2A0392580090D641 /* Screens */,
@@ -105,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				D7DF61312A08EA6E000BBC1A /* CourseModel.swift */,
+				D7696EC12A131DFA000B1D26 /* UserInfoModel.xcdatamodeld */,
+				D7696EC42A132257000B1D26 /* UserInfoController.swift */,
+				D7696ED32A135FA7000B1D26 /* AuthModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +166,8 @@
 		D7A2615B2A0392580090D641 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D7696ED02A135D14000B1D26 /* Auth */,
+				D7696EC92A1339D7000B1D26 /* Cart */,
 				D7DF61382A0E3784000BBC1A /* PhoneDetail */,
 				D7A2616B2A04A5DE0090D641 /* MainTab */,
 				D7A2615C2A03926A0090D641 /* Home */,
@@ -277,18 +325,26 @@
 			files = (
 				D7A2616A2A03BD2E0090D641 /* AppTabBar.swift in Sources */,
 				D7A2615E2A0392A70090D641 /* HomeScreen.swift in Sources */,
+				D7696EC82A133048000B1D26 /* TimeFormatting.swift in Sources */,
 				D7696EC02A121AF9000B1D26 /* ContentView.swift in Sources */,
 				D7A2616D2A04A5FA0090D641 /* MainTabScreen.swift in Sources */,
+				D7696ED42A135FA7000B1D26 /* AuthModel.swift in Sources */,
+				D7696ECD2A133A35000B1D26 /* EditFoodView.swift in Sources */,
+				D7696EC32A131DFA000B1D26 /* UserInfoModel.xcdatamodeld in Sources */,
 				D7DF61372A09016A000BBC1A /* CourseRow.swift in Sources */,
 				D7DF613A2A0E37A0000BBC1A /* PhoneDetailScreen.swift in Sources */,
 				D7A261652A03A68C0090D641 /* Color.swift in Sources */,
+				D7696ECF2A133B51000B1D26 /* AddFoodView.swift in Sources */,
 				D7A261582A0367F90090D641 /* APICaller.swift in Sources */,
 				D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */,
 				D7DF61322A08EA6E000BBC1A /* CourseModel.swift in Sources */,
 				D7A261742A04FB970090D641 /* SideMenuButton.swift in Sources */,
+				D7696EC52A132257000B1D26 /* UserInfoController.swift in Sources */,
 				D7A261672A03B1980090D641 /* CircleButtonAnimation.swift in Sources */,
 				D7A261722A04FA530090D641 /* SideMenu.swift in Sources */,
 				D7A2616F2A04E5BA0090D641 /* UIView.swift in Sources */,
+				D7696ED22A135D28000B1D26 /* LoginScreen.swift in Sources */,
+				D7696ECB2A1339EB000B1D26 /* CartScreen.swift in Sources */,
 				D7A261622A03A2740090D641 /* CircleButton.swift in Sources */,
 				D7DF61342A08EB05000BBC1A /* CourseService.swift in Sources */,
 			);
@@ -491,6 +547,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7696EC12A131DFA000B1D26 /* UserInfoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7696EC22A131DFA000B1D26 /* DataCourseModel.xcdatamodel */,
+			);
+			currentVersion = D7696EC22A131DFA000B1D26 /* DataCourseModel.xcdatamodel */;
+			path = UserInfoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D7A2613E2A0366440090D641 /* Project object */;
 }

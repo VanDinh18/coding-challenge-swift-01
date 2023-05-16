@@ -19,7 +19,7 @@ struct MainTabScreen: View {
                 TabView(selection: $selectedTab){
                     HomeScreen(isShowMenu: $isShowMenu)
                         .tag(0)
-                    Text("Cart").tag(1)
+                    CartScreen().tag(1)
                     Text("Gift").tag(2)
                     Text("Settings").tag(3)
                 }

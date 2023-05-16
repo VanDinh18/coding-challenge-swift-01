@@ -9,10 +9,29 @@ import SwiftUI
 
 @main
 struct SwiftApiApp: App {
+    @StateObject private var userInfoController = UserInfoController()
+    @StateObject private var authModel = AuthModel()
+    
     var body: some Scene {
         WindowGroup {
-            MainTabScreen()
-//            ContentView()
+            ApplicationSwitcher()
+                .environment(\.managedObjectContext,
+                              userInfoController.container.viewContext)
+                .environmentObject(authModel)
         }
+    }
+}
+
+struct ApplicationSwitcher: View {
+    
+    @EnvironmentObject var vm: AuthModel
+    
+    var body: some View {
+        if (vm.isLoggedIn) {
+            MainTabScreen()
+        } else {
+            LoginScreen()
+        }
+        
     }
 }

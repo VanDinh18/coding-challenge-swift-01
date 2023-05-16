@@ -26,7 +26,7 @@ struct CartScreen: View {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(food.name!)
                                         .bold()
-                                    
+
                                     Text("\(Int(food.calories))") + Text(" calories")
                                 }
                                 Spacer()

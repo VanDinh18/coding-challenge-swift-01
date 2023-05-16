@@ -21,7 +21,7 @@ struct MainTabScreen: View {
                         .tag(0)
                     CartScreen().tag(1)
                     Text("Gift").tag(2)
-                    Text("Settings").tag(3)
+                    SettingScreen().tag(3)
                 }
                 .overlay(alignment: .bottom){
                     AppTabBar(selectedTab: $selectedTab)

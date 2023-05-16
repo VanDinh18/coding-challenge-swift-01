@@ -37,4 +37,12 @@ class UserInfoController: ObservableObject {
         
         save(context: context)
     }
+    
+    func editFood(food: UserInfo, name: String, calories: Double, context: NSManagedObjectContext) {
+            food.date = Date()
+            food.name = name
+            food.calories = calories
+            
+            save(context: context)
+        }
 }

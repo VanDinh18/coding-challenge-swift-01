@@ -16,6 +16,8 @@
 		D7696ECF2A133B51000B1D26 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ECE2A133B51000B1D26 /* AddFoodView.swift */; };
 		D7696ED22A135D28000B1D26 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ED12A135D28000B1D26 /* LoginScreen.swift */; };
 		D7696ED42A135FA7000B1D26 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ED32A135FA7000B1D26 /* AuthModel.swift */; };
+		D7696ED62A138001000B1D26 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ED52A138001000B1D26 /* AppData.swift */; };
+		D7696ED92A138C37000B1D26 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7696ED82A138C37000B1D26 /* SettingScreen.swift */; };
 		D7A2614A2A0366440090D641 /* SwiftApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A261492A0366440090D641 /* SwiftApiApp.swift */; };
 		D7A2614E2A0366470090D641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A2614D2A0366470090D641 /* Assets.xcassets */; };
 		D7A261512A0366470090D641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A261502A0366470090D641 /* Preview Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		D7696ECE2A133B51000B1D26 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		D7696ED12A135D28000B1D26 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D7696ED32A135FA7000B1D26 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		D7696ED52A138001000B1D26 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		D7696ED82A138C37000B1D26 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		D7A261462A0366440090D641 /* SwiftApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A261492A0366440090D641 /* SwiftApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftApiApp.swift; sourceTree = "<group>"; };
 		D7A2614D2A0366470090D641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		D7696ED72A138C21000B1D26 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D7696ED82A138C37000B1D26 /* SettingScreen.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		D7A2613D2A0366440090D641 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 				D7696EC12A131DFA000B1D26 /* UserInfoModel.xcdatamodeld */,
 				D7696EC42A132257000B1D26 /* UserInfoController.swift */,
 				D7696ED32A135FA7000B1D26 /* AuthModel.swift */,
+				D7696ED52A138001000B1D26 /* AppData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 		D7A2615B2A0392580090D641 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D7696ED72A138C21000B1D26 /* Setting */,
 				D7696ED02A135D14000B1D26 /* Auth */,
 				D7696EC92A1339D7000B1D26 /* Cart */,
 				D7DF61382A0E3784000BBC1A /* PhoneDetail */,
@@ -327,6 +341,7 @@
 				D7A2615E2A0392A70090D641 /* HomeScreen.swift in Sources */,
 				D7696EC82A133048000B1D26 /* TimeFormatting.swift in Sources */,
 				D7696EC02A121AF9000B1D26 /* ContentView.swift in Sources */,
+				D7696ED62A138001000B1D26 /* AppData.swift in Sources */,
 				D7A2616D2A04A5FA0090D641 /* MainTabScreen.swift in Sources */,
 				D7696ED42A135FA7000B1D26 /* AuthModel.swift in Sources */,
 				D7696ECD2A133A35000B1D26 /* EditFoodView.swift in Sources */,
@@ -342,6 +357,7 @@
 				D7696EC52A132257000B1D26 /* UserInfoController.swift in Sources */,
 				D7A261672A03B1980090D641 /* CircleButtonAnimation.swift in Sources */,
 				D7A261722A04FA530090D641 /* SideMenu.swift in Sources */,
+				D7696ED92A138C37000B1D26 /* SettingScreen.swift in Sources */,
 				D7A2616F2A04E5BA0090D641 /* UIView.swift in Sources */,
 				D7696ED22A135D28000B1D26 /* LoginScreen.swift in Sources */,
 				D7696ECB2A1339EB000B1D26 /* CartScreen.swift in Sources */,

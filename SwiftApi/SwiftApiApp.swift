@@ -27,10 +27,10 @@ struct ApplicationSwitcher: View {
     @EnvironmentObject var vm: AuthModel
     
     var body: some View {
-        if (vm.isLoggedIn) {
-            MainTabScreen()
-        } else {
+        if (!vm.isLoggedIn) {
             LoginScreen()
+        } else {
+            MainTabScreen()
         }
         
     }

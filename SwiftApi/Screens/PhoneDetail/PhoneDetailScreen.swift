@@ -16,7 +16,7 @@ struct PhoneDetailScreen: View {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         }
         .toolbar(.hidden, for: .tabBar)
-//        .navigationTitle(course.name)
+        .navigationTitle(course.name)
         
     }
 }
